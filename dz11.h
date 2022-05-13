@@ -34,6 +34,15 @@ public:
 private:
 	bool gaming;
 };
+class Phone : public Keyboard, public Screen {
+public:
+	Phone();
+	Phone(bool b, int dpi, double diag, bool andr);
+	void print() override;
+	~Phone();
+private:
+	bool android;
+};
 class PC : public Keyboard, public Screen {
 public:
 	PC();

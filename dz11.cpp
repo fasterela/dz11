@@ -94,3 +94,28 @@ void PC::print()
 PC::~PC()
 {
 }
+
+Phone::Phone()
+{
+	android = 0;
+}
+
+Phone::Phone(bool b, int d, double diag, bool andr) :Keyboard(b), Screen(d, diag)
+{
+	android = andr;
+	cout << "Phone exist!\n";
+}
+
+void Phone::print()
+{
+	Keyboard::print();
+	Screen::print();
+	if (android) {
+		cout << "You have an android!\n";
+	}
+	else cout << "Your phone is not android!\n";
+}
+
+Phone::~Phone()
+{
+}

@@ -5,4 +5,7 @@ int main() {
 	L.print();
 	PC P(0, 720, 40, 0);
 	P.print();
+	Phone A(1, 403, 6, 1);
+	A.print();
+
 }
